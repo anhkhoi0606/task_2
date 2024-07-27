@@ -2,16 +2,125 @@
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 0 100;
   justify-content: center;
   align-items: center;
+  background: #F7F7F7;
+  font-family: sans-serif;
+}
+
+.color-hover:hover {
+  background: #534CC2;
+}
+
+.header {
+  width: 70%;
 }
 
 .header_title {
+  display: flex;
   color: #252525;
   margin-top: 40px;
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  justify-content: center;
+}
+
+.header_search-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header_search-bar-input {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 436px;
+  border-radius: 7px;
+  border: 1px solid  #6C63FF;
+}
+
+.header_select {
+  position: relative;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  color: #F7F7F7;
+  background:  #6C63FF;
+}
+
+.header_select:hover .header_select-list {
+  display: block;
+}
+
+.header_select-icon {
+  margin-left: 34px;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: none;
+}
+
+.header_select-list {
+  position: absolute;
+  z-index: 1;
+  bottom: -74px;
+  left: 1px;
+  width: 93px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid #6C63FF;
+  display: none;
+}
+
+.header_select-list-items {
+  color: #6C63FF;
+  padding: 4px;
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; 
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.header_select-list-items:hover {
+  background: rgba(108, 99, 255, 0.20);
+}
+
+.header_select:hover {
+  cursor: pointer;
+}
+
+.header_btn-mode {
+  text-transform: uppercase;
+  line-height: 100%; /* 18px */
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px;
+  color: #F7F7F7;
+  border-radius: 7px;
+  border: 1px solid #6C63FF;
+  background:  #6C63FF;  
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.header_btn-mode:hover {
+  cursor: pointer;
 }
